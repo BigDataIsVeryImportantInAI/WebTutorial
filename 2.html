@@ -1,51 +1,27 @@
 <head>
     <title>공부 목록</title>
     <meta charset="utf-8">
-    <style>
-        body {
-            margin: 0px;
-        }
-        a {
-            color: black;
-            text-decoration: none;
-        }
-        .saw {
-            color: gray;
-        }
-        #active {
-            color: red;
-        }
-        h1 {
-            font-size: 60px;
-            text-align: center;
-            border-bottom: 1px solid gray;
-            margin:0px;
-            padding: 20px;
-        }
-        ol {
-            border-right: 1px solid gray;
-            width: 100px;
-            margin: 0px;
-            padding: 10px;
-            padding-left: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1><a href="index.html">목록</a></h1>
-    <ol>
-        <li><a href="1.html" class="saw">자바</a></li>
-        <li><a href="2.html" class="saw" id="active">안드로이드</a></li>
-        <li><a href="3.html">파이썬</a></li>
-        <li><a href="4.html">장고</a></li>
-        <li><a href="5.html">디비</a></li>
-        <li><a href="6.html">머신러닝</a></li>
-        <li><a href="7.html">수학</a></li>
-        <li><a href="8.html">영어</a></li>
-    </ol>
-
-    <h2>안드로이드</h2>
-    <p>안드로이드 책 3개 - 실전, 레벨업, 넥스트스</p>
-    <p>레퍼런스 스터디</p>
-    <p>추후 코틀린, 머신러닝통합, 파베, 랠름 유명 라이브러리 파헤치기</p>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">자바</a></li>
+            <li><a href="2.html">안드로이드</a></li>
+            <li><a href="3.html">파이썬</a></li>
+            <li><a href="4.html">장고</a></li>
+            <li><a href="5.html">디비</a></li>
+            <li><a href="6.html">머신러닝</a></li>
+            <li><a href="7.html">수학</a></li>
+            <li><a href="8.html">영어</a></li>
+        </ol>
+        <div id="article">
+            <h2>안드로이드</h2>
+            <p>안드로이드 책 3개 - 실전, 레벨업, 넥스트스</p>
+            <p>레퍼런스 스터디</p>
+            <p>추후 코틀린, 머신러닝통합, 파베, 랠름 유명 라이브러리 파헤치기</p>
+        </div>
+    </div>
 </body>
