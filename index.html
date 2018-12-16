@@ -2,20 +2,12 @@
     <title>공부 목록</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="color.js"></script>
 </head>
 <body>
     <h1><a href="index.html">목록</a></h1>
     <input type="button" value="night" onclick="
-    var bodyStyle = document.querySelector('body').style;
-    if (this.value == 'night') {
-        this.value = 'day';
-        bodyStyle.backgroundColor = 'black';
-        bodyStyle.color = 'white';
-    } else {
-        this.value = 'night';
-        bodyStyle.backgroundColor = 'white';
-        bodyStyle.color = 'black';
-    }
+        dayAndNightModeSwitch(this);
     ">
     <div id="grid">
         <ol>

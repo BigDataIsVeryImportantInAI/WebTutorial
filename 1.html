@@ -2,9 +2,40 @@
     <title>공부 목록</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script>
+    function dayAndNightModeSwitch(self) {
+        var bodyStyle = document.querySelector('body').style;
+        var aList = document.querySelectorAll('a');
+        var i = 0;
+        if (self.value == 'night') {
+            self.value = 'day';
+            bodyStyle.backgroundColor = 'black';
+            bodyStyle.color = 'white';
+            
+            while(i < aList.length) {
+                aList[i].style.color = 'powderblue';
+                i++;
+            }
+
+        } else {
+            self.value = 'night';
+            bodyStyle.backgroundColor = 'white';
+            bodyStyle.color = 'black';
+            
+            while(i < aList.length) {
+                aList[i].style.color = 'blue';
+                i++;
+            }
+
+        }
+    }
+    </script>
 </head>
 <body>
     <h1><a href="index.html">목록</a></h1>
+    <input type="button" value="night" onclick="
+        dayAndNightModeSwitch(this);
+    ">
     <div id="grid">
         <ol>
             <li><a href="1.html">자바</a></li>
