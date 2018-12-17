@@ -1,11 +1,12 @@
 var Links = {
     setColor : function(color) {
-        var aList = document.querySelectorAll('a');
-        var i = 0;
-        while(i < aList.length) {
-            aList[i].style.color = color;
-            i++;
-        }
+        // var aList = document.querySelectorAll('a');
+        // var i = 0;
+        // while(i < aList.length) {
+        //     aList[i].style.color = color;
+        //     i++;
+        // }
+        $('a').css('color', color);
     }
 }
 var Body = {
